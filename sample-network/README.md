@@ -251,7 +251,7 @@ For installations at IBM Cloud, use the following configuration settings:
 export TEST_NETWORK_CLUSTER_RUNTIME="k3s"
 export TEST_NETWORK_COREDNS_DOMAIN_OVERRIDE="false"
 export TEST_NETWORK_STAGE_DOCKER_IMAGES="false"
-export TEST_NETWORK_STORAGE_CLASS="ibm-file-gold"
+export TEST_NETWORK_STORAGE_CLASS="ibmc-file-gold"
 ```
 
 To determine the external IP address for the Nginx ingress controller:
