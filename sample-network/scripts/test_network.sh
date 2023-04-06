@@ -44,6 +44,9 @@ function network_up() {
   wait_for ibppeer org2-peer1
   wait_for ibppeer org2-peer2
 
+  #Give time to orderernodes to start
+  sleep 120 
+
   wait_for ibporderer org0-orderersnode1
   wait_for ibporderer org0-orderersnode2
   wait_for ibporderer org0-orderersnode3
@@ -78,7 +81,7 @@ function wait_for() {
   local name=$2
 
   # wait for the operator to reconcile the CRD with a Deployment
-  kubectl -n $NS wait deployment/$name --for=condition=Available=true --timeout=240s
+  kubectl -n $NS wait deployment/$name --for=condition=Available=true --timeout=180s
 
   # wait for the deployment to reach Ready
   kubectl -n $NS rollout status deploy $name
