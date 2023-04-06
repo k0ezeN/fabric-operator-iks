@@ -78,7 +78,7 @@ function wait_for() {
   local name=$2
 
   # wait for the operator to reconcile the CRD with a Deployment
-  kubectl -n $NS wait deployment/$name --for=condition=Available=true --timeout=180s
+  kubectl -n $NS wait deployment/$name --for=condition=Available=true --timeout=240s
 
   # wait for the deployment to reach Ready
   kubectl -n $NS rollout status deploy $name
