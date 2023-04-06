@@ -157,7 +157,7 @@ function apply_network_peers() {
 
 function apply_network_orderers() {
   push_fn "Launching Fabric Orderers"
-
+  sleep 180
   apply_kustomization config/orderers
 
   # give the operator a chance to run the first reconciliation on the new resource
