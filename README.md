@@ -10,7 +10,7 @@ Using the operator, a Fabric network is realized in a declarative fashion by app
 orchestrating containers, storage, and configuration to achieve the desired target state.
 
 In nautical terms, fabric-operator serves as the _eXecutive Officer / XO_ of a vessel.  It
-allows you, the captains, to invest valuable time and energy formulating strategic objectives for a blockchain 
+allows you, the captain, to invest valuable time and energy formulating strategic objectives for a blockchain 
 deployment.  The operator, or XO, is responsible to enact the plan, and _"make it so."_ 
 
 _Fabric, Ahoy!_
